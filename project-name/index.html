@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Кекстаграм</title>
+</head>
+<body>
+  <div class="body-wrapper">
+  <main>
+    <div class="main-container">
+      <div class="player player-pause">
+        <div class="player__wrapper">
+        <div class="player__wrapper-info">
+          <p class="player__title-artist">Beyonce</p>
+          <p class="player__title-songname">Don't Hurt Yourself</p>
+          <audio id="playerAudio" class="player__audio viewer" src="../assets/audio/beyonce.mp3"></audio>
+              <div class="player__buttons">
+                  <button class="player__button player__button--prev"><img src="../assets/svg/backward.png"></button>
+                  <button class="player__button player__button--play"></button>
+                  <button class="player__button player__button--next"><img src="../assets/svg/forward.png"></button>
+              </div>
+        </div>
+        <img class="player__cover" src="../assets/img/lemonade.png" alt="">
+          <div class="duration-wrapper">
+            <input id ="song-duration" type="range" name="song-duration" class="player__range" min="0" max="1" value="0">
+            <div class="time-duration">
+              <div class="time-duration--current">00:00</div>
+              <div class="time-duration--finish">00:00</div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="https://rs.school/courses/javascript-preschool-ru">
+      <img src="../assets/svg/rss-logo.svg" width="150" height="56" alt="the Rolling school logo">
+    </a>
+      <a class="page-footer__link" href="https://github.com/kate-rin-a">GitHub@kate-rin-a</a>
+    <span>2024</span>
+  </footer>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
