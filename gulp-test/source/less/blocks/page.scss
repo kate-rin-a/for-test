@@ -1,0 +1,37 @@
+.page {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  color: $black;
+  text-transform: uppercase;
+  background-color: $grey-200;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: $white;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba($black, 0.2);
+  z-index: 5;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__wrapper {
+    width: $desktop-width;
+  }
+}
